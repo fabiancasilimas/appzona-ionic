@@ -63,7 +63,7 @@ var TabsPage = /** @class */ (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Inicio" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Denuncia" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contáctenos" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Inicio" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Denuncia" tabIcon="paper"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contáctenos" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -95,10 +95,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AboutPage = /** @class */ (function () {
     function AboutPage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.lista = [
+            {
+                titulo: 'Robo a persona',
+                color: '#999'
+            },
+            {
+                titulo: 'Delito informático',
+                color: '#999'
+            },
+            {
+                titulo: 'Extorsión',
+                color: '#999'
+            },
+            {
+                titulo: 'Hurto a residencia',
+                color: '#999'
+            }
+        ];
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Denuncia\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <p>Aquí va el formulario de Denuncias</p>\n  <!-- Lista -->\n  <ion-card>\n      <ion-card-header>\n        <strong>Tipo de delito</strong> \n      </ion-card-header>\n    \n      <ion-list>\n        <button ion-item *ngFor="let item of lista">\n          <ion-icon name="square-outline" item-start [ngStyle]="{\'color\':item.color}"></ion-icon>\n          {{ item.titulo }}\n        </button>\n    \n      </ion-list>\n    </ion-card>\n    <!-- Lista -->\n\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], AboutPage);
@@ -133,7 +151,7 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contáctenos\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ContactPage);
@@ -168,7 +186,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Inicio</ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content text-center padding>\n  <img src="/assets/imgs/logo-mizona.gif" alt="Logo de Mi Zona">\n  <ion-card>\n    <ion-card-content>\n      <ion-card-title>\n        <h1 text-capitalize><strong>seguridad ciudadana</strong></h1>\n          </ion-card-title>\n          <p>\n              Esta app te permite crear denuncias para que Todos podamos contribuir a tener una cuidad más segura.\n            </p>\n            <p text-capitalize padding-top>\n              bogotá mi casa, bogotá mi zona.\n            </p>\n      </ion-card-content>\n    </ion-card>\n\n  <p padding-top>\n    © Copyright © 2018\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Inicio</ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content text-center padding>\n  <img src="/assets/imgs/logo-mizona.gif" alt="Logo de Mi Zona">\n  <ion-card>\n    <ion-card-content>\n      <ion-card-header>\n        <h1 text-capitalize><strong>seguridad ciudadana</strong></h1>\n          </ion-card-header>\n          <p>\n              Esta app te permite crear denuncias para que Todos podamos contribuir a tener una cuidad más segura.\n            </p>\n            <p text-capitalize padding-top>\n              bogotá mi casa, bogotá mi zona.\n            </p>\n      </ion-card-content>\n    </ion-card>\n    <button ion-button>Iniciar sesión</button>\n    <button ion-button color="danger" outline>Denuncia</button>\n    \n  <p padding-top>\n    © Copyright © 2018\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);

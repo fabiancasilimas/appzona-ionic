@@ -7,6 +7,25 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+  lista: Array<any> = [
+    {
+      titulo:'Robo a persona',
+      color:'#999'
+    },
+    {
+      titulo:'Delito informático',
+      color:'#999'
+    },
+    {
+      titulo:'Extorsión',
+      color:'#999'
+    },
+    {
+      titulo: 'Hurto a residencia',
+      color:'#999'
+    }
+  ]
+
   constructor(public navCtrl: NavController) {
 
   }
