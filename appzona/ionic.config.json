@@ -1,0 +1,7 @@
+{
+  "name": "appzona",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
