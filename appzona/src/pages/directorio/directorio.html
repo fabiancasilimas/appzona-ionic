@@ -7,7 +7,9 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Directorio</ion-title>
+    <ion-title text-capitalize>
+      directorio
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,7 +18,7 @@
 <ion-content text-center padding>
     <ion-list>
         <button ion-item *ngFor="let item of directorioLista" (click)="openNavDetailsPage(item)" icon-start>
-          <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+          <ion-icon [name]="item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
           {{ item.title }}
         </button>
       </ion-list>

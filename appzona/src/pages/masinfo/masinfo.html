@@ -7,13 +7,22 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ item.title }}</ion-title>
+    <ion-title text-capitalize>{{ item.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
-  {{ item.description }}
+  <ion-card>
+    <ion-card-header>
+      <strong>CAI</strong> 
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon [name]="item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
+      {{ item.description }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+

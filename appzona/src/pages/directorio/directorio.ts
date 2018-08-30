@@ -20,61 +20,126 @@ export class DirectorioPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.directorioLista = [
       {
-        'title': 'Angular',
-        'icon': 'angular',
-        'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
-        'color': '#E63135'
+        'title': 'Alamos Norte',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'CSS3',
-        'icon': 'css3',
-        'description': 'The latest version of cascading stylesheets - the styling language of the web!',
-        'color': '#0CA9EA'
+        'title': 'Autopista Medellin',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'HTML5',
-        'icon': 'html5',
-        'description': 'The latest version of the web\'s markup language.',
-        'color': '#F46529'
+        'title': 'Bellavista Occidental',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'JavaScript',
-        'icon': 'javascript',
-        'description': 'One of the most popular programming languages on the Web!',
-        'color': '#FFD439'
+        'title': 'Bochica',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'Sass',
-        'icon': 'sass',
-        'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
-        'color': '#CE6296'
+        'title': 'Bochica II',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'NodeJS',
-        'icon': 'nodejs',
-        'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
-        'color': '#78BD43'
+        'title': 'Bolivia',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'Python',
-        'icon': 'python',
-        'description': 'A clear and powerful object-oriented programming language!',
-        'color': '#3575AC'
+        'title': 'Bolivia Oriental',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'Markdown',
-        'icon': 'markdown',
-        'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
-        'color': '#412159'
+        'title': 'Bonanza',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
       {
-        'title': 'Tux',
-        'icon': 'tux',
-        'description': 'The official mascot of the Linux kernel!',
-        'color': '#000'
+        'title': 'Bosque Popular',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
+      },
+      {
+        'title': 'Boyaca',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
+      },
+      {
+        'title': 'Centro Engativa',
+        'icon': 'document',
+        'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+        'color': '#999'
       },
     ]
   }
+// Ciudad Bachue
+// Ciudad Bachue I
+// Ciudadela Colsubsidio
+// El Cedro
+// El Cedro A.S.D.
+// El Cortijo
+// El Dorado
+// El Encanto
+// El Laurel
+// El Madrigal
+// El Muelle
+// El Real
+// Engativa
+// Florencia
+// Florida Blanca
+// Florida Blanca Norte
+// Garces Navas
+// Garces Navas Oriental
+// Jardin Botanico
+// La Cabana
+// La Estrada
+// La Estradita
+// La Granja
+// La Primavera
+// La Serena
+// La Soledad Norte
+// Las Ferias
+// Las Ferias Occidental
+// Los Alamos
+// Los Angeles
+// Los Cerezos
+// Minuto De Dios
+// Normandia
+// Normandia Occidental
+// Paloblanco
+// Paris
+// Paris Gaitan
+// Quintas De Sta. Barbara
+// Quirigua
+// San Ignacio
+// San Joaquin
+// Santa Helenita
+// Santa Cecilia
+// Santa Maria
+// Santa Monica
+// Sn. Antonio Engativa
+// Tabora
+// Villa Amalia
+// Villa Del Mar
+// Villa Gladys
+// Villa Luz
+// Villas De Granada
+// Villas De Granada I
 
   openNavDetailsPage(item) {
     this.navCtrl.push(MasinfoPage, { item: item });

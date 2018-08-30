@@ -33,61 +33,126 @@ var DirectorioPage = /** @class */ (function () {
         this.directorioLista = [];
         this.directorioLista = [
             {
-                'title': 'Angular',
-                'icon': 'angular',
-                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
-                'color': '#E63135'
+                'title': 'Alamos Norte',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'CSS3',
-                'icon': 'css3',
-                'description': 'The latest version of cascading stylesheets - the styling language of the web!',
-                'color': '#0CA9EA'
+                'title': 'Autopista Medellin',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'HTML5',
-                'icon': 'html5',
-                'description': 'The latest version of the web\'s markup language.',
-                'color': '#F46529'
+                'title': 'Bellavista Occidental',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'JavaScript',
-                'icon': 'javascript',
-                'description': 'One of the most popular programming languages on the Web!',
-                'color': '#FFD439'
+                'title': 'Bochica',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'Sass',
-                'icon': 'sass',
-                'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
-                'color': '#CE6296'
+                'title': 'Bochica II',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'NodeJS',
-                'icon': 'nodejs',
-                'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
-                'color': '#78BD43'
+                'title': 'Bolivia',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'Python',
-                'icon': 'python',
-                'description': 'A clear and powerful object-oriented programming language!',
-                'color': '#3575AC'
+                'title': 'Bolivia Oriental',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'Markdown',
-                'icon': 'markdown',
-                'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
-                'color': '#412159'
+                'title': 'Bonanza',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
             {
-                'title': 'Tux',
-                'icon': 'tux',
-                'description': 'The official mascot of the Linux kernel!',
-                'color': '#000'
+                'title': 'Bosque Popular',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
+            },
+            {
+                'title': 'Boyaca',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
+            },
+            {
+                'title': 'Centro Engativa',
+                'icon': 'document',
+                'description': 'Dirección: TRANSVERSAL 93 # 64 G-00 | Teléfono: 4368494',
+                'color': '#999'
             },
         ];
     }
+    // Ciudad Bachue
+    // Ciudad Bachue I
+    // Ciudadela Colsubsidio
+    // El Cedro
+    // El Cedro A.S.D.
+    // El Cortijo
+    // El Dorado
+    // El Encanto
+    // El Laurel
+    // El Madrigal
+    // El Muelle
+    // El Real
+    // Engativa
+    // Florencia
+    // Florida Blanca
+    // Florida Blanca Norte
+    // Garces Navas
+    // Garces Navas Oriental
+    // Jardin Botanico
+    // La Cabana
+    // La Estrada
+    // La Estradita
+    // La Granja
+    // La Primavera
+    // La Serena
+    // La Soledad Norte
+    // Las Ferias
+    // Las Ferias Occidental
+    // Los Alamos
+    // Los Angeles
+    // Los Cerezos
+    // Minuto De Dios
+    // Normandia
+    // Normandia Occidental
+    // Paloblanco
+    // Paris
+    // Paris Gaitan
+    // Quintas De Sta. Barbara
+    // Quirigua
+    // San Ignacio
+    // San Joaquin
+    // Santa Helenita
+    // Santa Cecilia
+    // Santa Maria
+    // Santa Monica
+    // Sn. Antonio Engativa
+    // Tabora
+    // Villa Amalia
+    // Villa Del Mar
+    // Villa Gladys
+    // Villa Luz
+    // Villas De Granada
+    // Villas De Granada I
     DirectorioPage.prototype.openNavDetailsPage = function (item) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__masinfo_masinfo__["a" /* MasinfoPage */], { item: item });
     };
@@ -96,7 +161,7 @@ var DirectorioPage = /** @class */ (function () {
     };
     DirectorioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-directorio',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/directorio/directorio.html"*/'<!--\n  Generated template for the DirectorioPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Directorio</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n    <ion-list>\n        <button ion-item *ngFor="let item of directorioLista" (click)="openNavDetailsPage(item)" icon-start>\n          <ion-icon [name]="\'logo-\' + item.icon" [ngStyle]="{\'color\': item.color}" item-start></ion-icon>\n          {{ item.title }}\n        </button>\n      </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/directorio/directorio.html"*/,
+            selector: 'page-directorio',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/directorio/directorio.html"*/'<!--\n  Generated template for the DirectorioPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title text-capitalize>\n      directorio\n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n    <ion-list>\n        <button ion-item *ngFor="let item of directorioLista" (click)="openNavDetailsPage(item)" icon-start>\n          <ion-icon [name]="item.icon" [ngStyle]="{\'color\': item.color}" item-start></ion-icon>\n          {{ item.title }}\n        </button>\n      </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/directorio/directorio.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], DirectorioPage);
@@ -142,12 +207,11 @@ var MasinfoPage = /** @class */ (function () {
     };
     MasinfoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-masinfo',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/masinfo/masinfo.html"*/'<!--\n  Generated template for the MasinfoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ item.title }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-icon [name]="\'logo-\' + item.icon" [ngStyle]="{\'color\': item.color}"></ion-icon>\n  {{ item.description }}\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/masinfo/masinfo.html"*/,
+            selector: 'page-masinfo',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/masinfo/masinfo.html"*/'<!--\n  Generated template for the MasinfoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title text-capitalize>{{ item.title }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      <strong>CAI</strong> \n    </ion-card-header>\n    <ion-card-content>\n      <ion-icon [name]="item.icon" [ngStyle]="{\'color\': item.color}"></ion-icon>\n      {{ item.description }}\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/masinfo/masinfo.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], MasinfoPage);
     return MasinfoPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=masinfo.js.map
@@ -188,7 +252,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Por favor inicia sesión</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit distinctio et iusto veritatis debitis sapiente quasi ad neque, ipsa voluptatem sit earum voluptate beatae quos quidem. Corporis, quam doloremque?</p>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title text-capitalize>\n      Por favor inicia sesión\n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit distinctio et iusto veritatis debitis sapiente quasi ad neque, ipsa voluptatem sit earum voluptate beatae quos quidem. Corporis, quam doloremque?</p>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], LoginPage);
@@ -316,7 +380,7 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contáctenos\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title text-capitalize>\n      contáctenos\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-card>\n      \n        <ion-card-content>\n          Comparta con nosotros sus sugerencias, felicitaciones, reclamos o denuncias.\n          <ion-list>\n\n              <ion-item>\n                <ion-label floating>Nombre y Apellidos</ion-label>\n                <ion-input type="text"></ion-input>\n              </ion-item>\n            \n              <ion-item>\n                <ion-label floating>Correo eléctrónico</ion-label>\n                <ion-input type="email"></ion-input>\n              </ion-item>\n\n              <ion-item>\n                  <ion-label floating>Mensaje</ion-label>\n                  <ion-textarea></ion-textarea>\n                </ion-item>\n\n              <div padding>\n                  <button ion-button color="primary" block>Enviar mensaje</button>\n                </div>\n            \n            </ion-list>\n        </ion-card-content>\n      \n      </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
@@ -561,7 +625,7 @@ var AboutPage = /** @class */ (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Denuncia\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <p>Aquí va el formulario de Denuncias</p>\n  <!-- Lista -->\n  <ion-card>\n      <ion-card-header>\n        <strong>Tipo de delito</strong> \n      </ion-card-header>\n    \n      <ion-list>\n        <button ion-item *ngFor="let item of lista">\n          <ion-icon name="square-outline" item-start [ngStyle]="{\'color\':item.color}"></ion-icon>\n          {{ item.titulo }}\n        </button>\n    \n      </ion-list>\n    </ion-card>\n    <!-- Lista -->\n\n</ion-content>'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title text-capitalize>\n      denuncia\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only>\n          <ion-icon name="contact"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <p>Aquí va el formulario de Denuncias</p>\n  <!-- Lista -->\n  <ion-card>\n      <ion-card-header>\n        <strong>Tipo de delito</strong> \n      </ion-card-header>\n    \n      <ion-list>\n        <button ion-item *ngFor="let item of lista">\n          <ion-icon name="square-outline" item-start [ngStyle]="{\'color\':item.color}"></ion-icon>\n          {{ item.titulo }}\n        </button>\n    \n      </ion-list>\n    </ion-card>\n    <!-- Lista -->\n\n</ion-content>'/*ion-inline-end:"/Users/ccasilimas/Documents/git/appzona-ionic/appzona/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AboutPage);
