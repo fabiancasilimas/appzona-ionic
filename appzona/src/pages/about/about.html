@@ -13,9 +13,16 @@
 
 <ion-content padding>
 
-  <p>Aquí va el formulario de Denuncias</p>
+  <p>Denuncias</p>
+
+  <ion-list>
+      <button ion-item *ngFor="let denuncia of denuncias">
+        {{denuncia.id}} - {{denuncia.title}} - {{denuncia.body}}
+      </button>
+    </ion-list>
+
   <!-- Lista -->
-  <ion-card>
+  <!-- <ion-card>
       <ion-card-header>
         <strong>Tipo de delito</strong> 
       </ion-card-header>
@@ -27,7 +34,7 @@
         </button>
     
       </ion-list>
-    </ion-card>
+    </ion-card> -->
     <!-- Lista -->
-
+  
 </ion-content>
