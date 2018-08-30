@@ -8,7 +8,7 @@
 
   <ion-navbar>
     <ion-title text-capitalize>
-      Por favor inicia sesión
+      inicio sesión 
     </ion-title>
   </ion-navbar>
 
@@ -16,6 +16,34 @@
 
 
 <ion-content padding>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit distinctio et iusto veritatis debitis sapiente quasi ad neque, ipsa voluptatem sit earum voluptate beatae quos quidem. Corporis, quam doloremque?</p>
+  <ion-card>
+      <ion-card-content>
+        Por favor inicia sesión
+        <ion-list>
+
+            <ion-item>
+              <ion-label floating>Correo electrónico</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Recuérdame</ion-label>
+                  <ion-checkbox></ion-checkbox>
+                </ion-item>
+
+            <div padding>
+                <button ion-button color="primary" block>Iniciar sesión</button>
+              </div>
+              Registrarse <br />
+              ¿Has olvidado tu contraseña?
+          </ion-list>
+      </ion-card-content>
+    
+    </ion-card>
 
 </ion-content>
