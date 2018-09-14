@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-capitalize>
+      denuncia
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="contact"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>Denuncias</p>
+
+  <ion-list>
+      <button ion-item *ngFor="let denuncia of denuncias">
+        {{denuncia.id}} - {{denuncia.title}} - {{denuncia.body}}
+      </button>
+    </ion-list>
+
+  <!-- Lista -->
+  <!-- <ion-card>
+      <ion-card-header>
+        <strong>Tipo de delito</strong> 
+      </ion-card-header>
+    
+      <ion-list>
+        <button ion-item *ngFor="let item of lista">
+          <ion-icon name="square-outline" item-start [ngStyle]="{'color':item.color}"></ion-icon>
+          {{ item.titulo }}
+        </button>
+    
+      </ion-list>
+    </ion-card> -->
+    <!-- Lista -->
+  
+</ion-content>
